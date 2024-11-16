@@ -1,0 +1,575 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --warna1: #1a1a1d;
+  --warna2: #a6aebf;
+  --warna3: #fef9f2;
+  --warna4: #789dbc;
+  --warna5: #133e87;
+  --warna6: #433878;
+}
+
+body {
+  font-family: "Noto Sans";
+  background-color: var(--warna1);
+  color: var(--warna3);
+}
+
+/* Bagian header */
+
+.header {
+  font-weight: bold;
+  font-size: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* ini bagian header animasi */
+.header .navbar-brand {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: munculDariKiri 0.7s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.header .navbar-nav .nav-link {
+  opacity: 0;
+  transform: translateX(50px);
+  animation: munculDariKanan 0.7s ease-out forwards;
+  animation-delay: calc(var(--i) * 0.3s);
+}
+
+/* ini bagian header akhir animasi */
+
+.container-fluid {
+  background-color: var(--warna1);
+  padding-top: 10px;
+}
+
+.navbar {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-brand {
+  font-size: 25px;
+  transition: color 0.3s ease;
+  margin-left: 40px;
+  color: var(--warna2);
+}
+
+.navbar-brand:hover {
+  color: var(--warna3);
+  text-shadow: 2px 2px 4px var(--warna4);
+}
+
+.navbar-nav {
+  margin-right: 100px;
+}
+
+.nav-item {
+  margin-left: 15px;
+}
+
+.nav-link.active {
+  color: var(--warna2) !important;
+}
+
+.nav-link.active:hover {
+  color: var(--warna3) !important;
+  text-shadow: 2px 2px 4px var(--warna4);
+}
+
+/* bagian akhir header */
+
+/* bagian beranda */
+
+.beranda {
+  padding-top: 90px;
+  padding-bottom: 200px;
+}
+
+.konten_beranda {
+  padding: 20px;
+}
+
+.foto {
+  width: 350px;
+  position: absolute;
+  right: 200px;
+  top: 90px;
+  border-bottom: 3px solid var(--warna4);
+}
+
+.beranda,
+h3,
+h1,
+p,
+.beranda-icon,
+.button_1 {
+  margin-left: 20px;
+}
+
+h1 {
+  color: var(--warna3);
+  font-weight: bold;
+  text-shadow: 0 0 10px var(--warna3);
+  padding-bottom: 20px;
+}
+
+.teks {
+  font-weight: bold;
+  text-shadow: 0 0 10px var(--warna3);
+}
+
+.teks_informan {
+  padding-top: 10px;
+  width: 650px;
+  text-align: justify;
+}
+
+.beranda-icon,
+.bx {
+  margin-right: 10px;
+  font-size: 40px;
+}
+
+.bx:hover {
+  text-shadow: 0 0 10px var(--warna4);
+}
+
+.button_1,
+.link1 {
+  background-color: var(--warna5);
+  padding: 5px;
+  color: var(--warna3);
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 10px;
+  border: 2px solid var(--warna5);
+  box-shadow: 0 0 20px var(--warna5);
+  letter-spacing: 1px;
+}
+
+.button_1:hover {
+  box-shadow: 0 0 20px var(--warna3);
+  transition: box-shadow 0.5s ease;
+}
+
+.link1:hover {
+  text-shadow: 0 0 10px var(--warna2);
+}
+
+/* bagian animasi beranda */
+.beranda .konten_beranda img {
+  opacity: 0;
+  transform: translateY(-20px); /* Muncul dari atas */
+  animation: munculPerlahan 0.7s ease-out forwards;
+  animation-delay: calc(var(--i) * 0.3s);
+}
+
+.beranda .konten_beranda h3,
+.beranda .konten_beranda h1,
+.beranda .konten_beranda p {
+  opacity: 0;
+  transform: translateX(-50px); /* Muncul dari kiri */
+  animation: munculDariKiri 0.7s ease-out forwards;
+  animation-delay: calc(var(--i) * 0.3s);
+}
+
+.beranda .konten_beranda .beranda-icon a {
+  opacity: 0;
+  transform: scale(0.5); /* Muncul dengan efek zoom */
+  animation: munculDenganZoom 0.5s ease-out forwards;
+  animation-delay: calc(var(--i) * 0.2s);
+}
+
+.beranda .konten_beranda .button_1 {
+  opacity: 0;
+  transform: translateY(50px); /* Muncul dari bawah */
+  animation: munculDariBawah 0.7s ease-out forwards;
+  animation-delay: calc(var(--i) * 0.3s);
+}
+/* bagian akhir animasi beranda */
+
+/* bagian akhir beranda */
+
+/* bagian about me */
+.about_me {
+  text-align: center;
+  padding-left: 100px;
+  padding-top: 90px;
+}
+
+.foto_about_me {
+  position: absolute;
+  width: 300px;
+  right: 250px;
+  top: 850px;
+  border-bottom: solid 2px var(--warna5);
+}
+
+.teks_about_h2 {
+  padding-bottom: 50px;
+  font-weight: bold;
+}
+.about_me_span {
+  color: var(--warna6);
+}
+
+.teks_about_me {
+  background-color: transparent;
+  width: 600px;
+  border: solid 2px var(--warna2);
+  border-radius: 20px;
+  padding-right: 20px;
+  box-shadow: 2px 4px 20px var(--warna5);
+}
+
+.teks_about_h4 {
+  padding-top: 10px;
+}
+
+.teks_about_p {
+  padding-top: 10px;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+
+/* bagian akhir about me */
+
+/* bagian project */
+
+.project {
+  padding-top: 80px;
+}
+.teks_project {
+  text-align: center;
+}
+
+.h2_teks_project {
+  font-weight: bold;
+}
+
+.project_span {
+  color: var(--warna6);
+}
+
+.Conten_Project {
+  display: flex;
+  gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.Conten_Project_1 {
+  background-color: transparent;
+  box-shadow: 0 0 10px var(--warna5);
+  border-radius: 10px;
+  border: solid 2px var(--warna6);
+  word-spacing: 2px;
+}
+
+.foto_content_project_1 {
+  width: 80%;
+  padding: 10px;
+  margin-top: 30px;
+  margin-left: 65px;
+  margin-bottom: 15px;
+  border: 2px solid var(--warna6);
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--warna5);
+}
+
+.foto_content_project_1:hover {
+  transform: scale(1.05);
+}
+
+.judul_project_1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.cerita_project_1 {
+  font-size: 12px;
+  text-align: justify;
+  width: 600px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  margin-right: 20px;
+}
+
+.bx-link-external {
+  font-size: 30px;
+  margin-left: 300px;
+}
+
+.judul_project_1,
+.cerita_project_1,
+.bx-link-external {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  transform: translateY(10px);
+}
+
+.Conten_Project_1:hover .judul_project_1,
+.Conten_Project_1:hover .cerita_project_1,
+.Conten_Project_1:hover .bx-link-external {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.Conten_Project_2 {
+  background-color: transparent;
+  box-shadow: 0 0 10px var(--warna5);
+  border-radius: 10px;
+  border: solid 2px var(--warna6);
+  word-spacing: 2px;
+}
+
+.foto_content_project_2 {
+  width: 70%;
+  padding: 10px;
+  margin-top: 25px;
+  margin-left: 110px;
+  margin-bottom: 15px;
+  border: 2px solid var(--warna6);
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--warna5);
+}
+
+.foto_content_project_2:hover {
+  transform: scale(1.05);
+}
+
+.judul_project_2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.cerita_project_2 {
+  font-size: 12px;
+  text-align: justify;
+  width: 600px;
+  margin-bottom: 5px;
+}
+
+.judul_project_2,
+.cerita_project_2 {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  transform: translateY(10px);
+}
+
+.Conten_Project_2:hover .judul_project_2,
+.Conten_Project_2:hover .cerita_project_2,
+.Conten_Project_2:hover .bx-link-external {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* bagian akhir project */
+
+/* bagian my skill */
+.my_skills {
+  padding-top: 90px;
+  padding-bottom: 300px;
+}
+
+.teks_my_skills {
+  text-align: center;
+}
+
+.h2_my_skills {
+  font-weight: bold;
+}
+
+.span_skills {
+  color: var(--warna6);
+}
+
+.icon_my_skills {
+  padding-top: 80px;
+  font-size: 120px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.icon_my_skills i {
+  transition: transform 0.3s ease;
+}
+
+.icon_my_skills i:hover {
+  transform: scale(1.1);
+}
+
+.fa-html5:hover {
+  text-shadow: 0 0 4px #fa812f;
+}
+
+.fa-css3-alt:hover {
+  text-shadow: 0 0 4px #133e87;
+}
+
+.fa-js:hover {
+  text-shadow: 0 0 4px #ffe31a;
+}
+
+.fa-node-js:hover {
+  text-shadow: 0 0 4px #117554;
+}
+.fa-php:hover {
+  text-shadow: 0 0 4px #1e2a5e;
+}
+
+.fa-laravel:hover {
+  text-shadow: 0 0 4px #ff0000;
+}
+.fa-bootstrap:hover {
+  text-shadow: 0 0 4px #4f1787;
+}
+.fa-git-alt:hover {
+  text-shadow: 0 0 4px #b8001f;
+}
+/* bagian akhir my skill */
+
+/* bagian contact me */
+.contact_me {
+  padding-top: 120px;
+}
+
+.contact_me h2 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.span_contact_me {
+  color: var(--warna6);
+}
+
+.information_contact_me {
+  text-align: center;
+}
+
+.email,
+.wa {
+  text-decoration: none;
+  color: var(--warna3);
+  padding-right: 20px;
+}
+
+.other_platform {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.formulir_chat_contact_me {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--warna5);
+  border: solid 2px var(--warna6);
+}
+
+.formulir_chat_contact_me form {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.formulir_chat_contact_me input,
+.formulir_chat_contact_me textarea {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid var(--warna6);
+  box-shadow: 0 0 10px var(--warna5);
+  border-radius: 10px;
+  background-color: transparent;
+  color: var(--warna3);
+}
+
+.formulir_chat_contact_me input:hover,
+.formulir_chat_contact_me textarea:hover {
+  box-shadow: 0 0 10px var(--warna4);
+  border: 2px solid var(--warna5);
+  outline: none;
+}
+
+.formulir_chat_contact_me input::placeholder,
+.formulir_chat_contact_me textarea::placeholder {
+  color: var(--warna2);
+}
+
+.formulir_chat_contact_me textarea {
+  resize: none;
+}
+
+.formulir_chat_contact_me button {
+  background-color: var(--warna5);
+  color: var(--warna3);
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.formulir_chat_contact_me button:hover {
+  box-shadow: 0 0 10px var(--warna4);
+  color: var(--warna2);
+}
+/* bagian akhir contact me */
+
+/* bagian footer */
+footer {
+  text-align: center;
+  padding-top: 50px;
+  font-weight: bold;
+}
+/* bagian akhir footer */
+
+/* bagian animasi */
+@keyframes munculPerlahan {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes munculDariKiri {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes munculDariKanan {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes munculDariBawah {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes munculDenganZoom {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
