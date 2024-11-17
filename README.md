@@ -4,7 +4,7 @@
    Website portofolio pertama yang saya buat untuk memulai project menggunakan HTML, CSS, JAVASCRIPT dengan boostrap, Jsdelivr, dan Boxicon.
   </p>
   <h2>Demo</h2>
-  https://portofolio-m-dede-nanda-pratama.vercel.app/
+  sINI LINK NYA
   <h2>Cara Menjalankan Proyek</h2>
   <ol>
     <li>Clone repository ini:
