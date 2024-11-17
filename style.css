@@ -1,5 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
+/* responsive mobile  */
+
+@media (max-width: 768px) {
+  .foto {
+    width: 80%;
+    right: 5%;
+    top: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .foto_content_project_1 {
+    width: 80%;
+    max-width: 280px;
+    right: 5%;
+    top: 700px;
+  }
+}
+
 :root {
   --warna1: #1a1a1d;
   --warna2: #a6aebf;
@@ -95,11 +114,13 @@ body {
 }
 
 .foto {
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   position: absolute;
-  right: 200px;
-  top: 90px;
+  right: 13%;
+  top: 12%;
   border-bottom: 3px solid var(--warna4);
+  box-sizing: border-box;
 }
 
 .beranda,
@@ -204,10 +225,12 @@ h1 {
 
 .foto_about_me {
   position: absolute;
-  width: 300px;
-  right: 250px;
+  width: 100%;
+  max-width: 300px;
+  right: 15%;
   top: 850px;
   border-bottom: solid 2px var(--warna5);
+  box-sizing: border-box;
 }
 
 .teks_about_h2 {
