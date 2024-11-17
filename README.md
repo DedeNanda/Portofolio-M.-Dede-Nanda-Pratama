@@ -8,7 +8,7 @@
   <h2>Cara Menjalankan Proyek</h2>
   <ol>
     <li>Clone repository ini:
-      <pre><code>git clone SINI LINK NYA</code></pre>
+      <pre><code>git clone https://github.com/DedeNanda/Portofolio-M.-Dede-Nanda-Pratama</code></pre>
     </li>
   </ol>
   <h2>Lisensi</h2>
