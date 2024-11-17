@@ -1,4 +1,4 @@
- <h1 align="center"> Dede Nanda's Portfolio Website</h1>
+ <h1 align="center"> Dede Nanda Portfolio Website</h1>
   <h2>Deskripsi</h2>
   <p>
    Website portofolio pertama yang saya buat untuk memulai project menggunakan HTML, CSS, JAVASCRIPT dengan boostrap, Jsdelivr, dan Boxicon.
